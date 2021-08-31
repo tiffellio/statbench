@@ -1,0 +1,51 @@
+/* Nutrition Page - Style Sheet */
+
+body {
+    background-color: #25201d;
+    color: #b2b2ae;
+    font-family: 'Pontano Sans', 'Open Sans', sans-serif;
+  }
+
+  /* -------- SIDEBAR CONTAINER -------- */
+#logo {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  #stat{ color: #f48fb1; border-bottom: 1px solid #03d9c4; }
+  #bench{ color: #03d9c4; border-bottom: 1px solid #f48fb1; }
+  
+  /* default sidebar styling */
+  .sidebar-item a{
+    text-decoration: none;
+    color: #b2b2ae;
+    font-size: large;
+    padding:15px;
+  }
+  
+  /* sidebar item when hovered */
+  .sidebar-item a:hover{
+    color: #E8E6E1;
+  }
+  
+  /* text color of selected sidebar item */
+  #homepage a{
+    color: #E8E6E1;
+  }
+  
+  /*background color of selected sidebar item */
+  div#homepage.sidebar-item {
+    border-radius: 5px;
+    background-color: #504A40;
+    padding: 15px;
+  }
+  
+  
+  .sidebar-item{
+    font-size: 16px;
+    text-align: left;
+    padding: 15px;
+  }
+
+  

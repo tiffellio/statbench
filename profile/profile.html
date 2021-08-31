@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <title>Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href='https://fonts.googleapis.com/css?family=Pontano Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="profile-grid.css" />
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- *********** SIDE BAR *********** -->
+    <div class="item" id="sidebar">
+      <div id="logo">
+        <span id="stat">STAT</span>
+        <span id="bench">BENCH</span>
+      </div>
+      <div class="sidebar-item"><a href="../index.html">Dashboard</a></div>
+      <div class="sidebar-item"><a href="../nutrition/nutrition.html">Nutrition</a></div>
+      <div class="sidebar-item"><a href="../exercise/exercise.html">Exercise</a></div>
+      <div class="sidebar-item"><a href="../sleep/sleep.html">Sleep</a></div>
+      <!-- Future Feature: Goals -->
+      <div class="sidebar-item" id="selected"><a href="profile.html"> Profile </a></div>
+    </div>
+
+    <!-- Fade in content as page loads -->
+    <script> $(document).ready( function(){ $(".sub-container").hide().fadeIn(1500); });  </script>
+
+    <div class="item sub-container">
+
+      <div id="sub-item-1">
+
+      <form>
+        <label id="form-title"> Personalise your stats! </label>
+        <br>
+
+        <input type="text" id="fname"/>
+        <br>
+        <label for="fname"> First Name </label>
+        <br>
+
+        <input type="text" id="lname"/>
+        <br>
+        <label for="lname"> Last Name </label>
+        <br>
+
+        <input type="date" />
+        <br>
+        <label for="lname"> Birthdate </label>
+        <br>
+
+
+        <label> Height: </label>
+        <input type="text" id="ft" class="height-input"/> <label for="ft" > foot </label>
+        <input type="text" id="in" class="height-input"/> <label for="in"> inches </label>
+        <br>
+        <!-- add a cm toggle -->
+
+        <label for="lbs"> Weight: </label>
+        <input type="text" id="lbs" placeholder="lbs"/>
+        <br>
+
+        <p>Gender:</p>
+        <input type="radio" id="fem" name="gender" value="female">
+        <label for="fem"> F </label>
+        <input type="radio" id="masc" name="gender" value="male">
+        <label for="masc">M</label><br>
+
+        <button>+ UPDATE!</button>
+      </form>
+
+    </div> <!-- end subitem 1 -->
+
+
+  <div id="sub-item-2">
+    <label for="fname"> Profile </label>
+    <p> Once the data is input into the database, display it here.</p>
+  </div>
+
+
+  </div> <!-- end container -->
+</body>
+</html>

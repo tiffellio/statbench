@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Exercise</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="exercise.css" />
+    <link rel="stylesheet" href="exercise-grid.css" />
+    <link href='https://fonts.googleapis.com/css?family=Pontano Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Fade in content as page loads -->
+    <script> $(document).ready( function(){ $("#exercise-form").hide().fadeIn(1500); });  </script>
+
+    <div class="container">
+
+        <!-- *********** SIDE BAR *********** -->
+        <div class="item" id="sidebar">
+            <div id="logo">
+            <span id="stat">STAT</span>
+            <span id="bench">BENCH</span>
+            </div>
+            <div class="sidebar-item"><a href="../index.html">Dashboard</a></div>
+            <div class="sidebar-item"><a href="../nutrition/nutrition.html">Nutrition</a></div>
+            <div class="sidebar-item" id="homepage"><a href="exercise.html">Exercise</a></div>
+            <div class="sidebar-item"><a href="../sleep/sleep.html">Sleep</a></div>
+            <!-- Future Feature: Goals -->
+            <div class="sidebar-item"><a href="../profile/profile.html"> Profile </a></div>
+        </div>
+
+        <div class="item" id="exercise-form">
+            <form>
+                
+                <label> Type </label> <!-- Search -->
+                <input type="text" />
+
+                <label> Intensity </label> <!-- is this required? Research later.-->
+                <select name="intensity">
+                    <option value="low"> Low </option>
+                    <option value="moderate"> Moderate </option>
+                    <option value="high"> High </option>
+                </select>
+                
+                <label> Duration </label>
+                <input type="text" />
+
+                <button type="submit"> + LOG! </button>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

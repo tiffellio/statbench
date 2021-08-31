@@ -1,0 +1,6 @@
+PROFILE (actid [PRIMARY KEY], fname, lname, bday, height, weight, gender);
+DATE ( dateid [PRIMARY KEY], actid [SECONDARY KEY], date );
+FOOD (fid [PRIMRY KEY], actid [SECONDARY KEY], dateid [SECONDARY KEY], type, quantity, calories, protein, fat, carbs);
+EXERCISE (xid [PRIMARY KEY], actid [SECONDARY KEY], dateid [SECONDARY KEY], type, intensity, duration );
+SLEEP (sid [PRIMARY KEY], actid [SECONDARY KEY], dateid [SECONDARY KEY], sleeptime, quality);
+

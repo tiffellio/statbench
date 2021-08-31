@@ -1,0 +1,29 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 100vh;
+}
+
+.item {
+
+    background-color: #413e39;
+    box-shadow: 10px 10px 10px #13120E;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 5%;
+}
+
+.sub-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+#sub-item-1 {
+    grid-row: 1 / 2;
+    padding: 2%;
+}
+
+#sub-item-2 {
+    grid-row: 2 / -1;
+    padding: 2%;
+}

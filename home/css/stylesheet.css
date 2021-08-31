@@ -1,0 +1,188 @@
+/* STYLESHEET FOR UI DESIGN - THEME 'WARM GRAY'
+   Author: Tiffany Elliott
+   Date: July 2021
+*/
+
+body {
+  background-color: #25201d;
+  color: #b2b2ae;
+  font-family: 'Pontano Sans', 'Open Sans', sans-serif;
+}
+
+/* -------- Top bar labels --------- */
+#calories-label, #activity-label, #water-label {
+  color: #03d9c4; /* green */
+}
+
+/* -------- SIDEBAR CONTAINER -------- */
+#logo {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+}
+
+#stat{ color: #f48fb1; border-bottom: 1px solid #03d9c4; }
+#bench{ color: #03d9c4; border-bottom: 1px solid #f48fb1; }
+
+/* default sidebar styling */
+.sidebar-item a{
+  text-decoration: none;
+  color: #b2b2ae;
+  font-size: large;
+  padding:15px;
+}
+
+/* sidebar item when hovered */
+.sidebar-item a:hover{
+  color: #E8E6E1;
+}
+
+/* text color of selected sidebar item */
+#homepage a{
+  color: #E8E6E1;
+}
+
+/*background color of selected sidebar item */
+div#homepage.sidebar-item {
+  border-radius: 5px;
+  background-color: #504A40;
+  padding: 15px;
+}
+
+
+.sidebar-item{
+  font-size: 16px;
+  text-align: left;
+  padding: 15px;
+}
+
+/* -------- CALORIES CONTAINER -------- */
+div#calories.item {
+  padding: 5px;
+}
+#calories-label {
+  padding-left: 10px;
+  position: relative;
+  top: 10px
+  /*display: inline-block;*/
+}
+
+div#calories-num {
+  width: 100px;
+  display: inline-block;
+}
+/* NOTE: ^ divs auto create line break so use
+inline-block for placing items beside */
+
+#calories-num {
+  text-align: center;
+  line-height: 86px;
+  font-size: 40px;
+}
+
+#calories img{
+  float: left;
+  padding: 10px;
+}
+
+/* -------- WATER CONTAINER -------- */
+div#water.item {
+  padding: 5px;
+}
+
+#water-label {
+  padding-left: 10px;
+  position: relative;
+  top: 10px
+  /*display: inline-block;*/
+}
+
+div#water-num {
+  width: 100px;
+  display: inline-block;
+}
+/* NOTE: ^ divs auto create line break so use
+inline-block for placing items beside */
+
+#water-num {
+  font-size:40px;
+  text-align: center;
+  line-height: 86px;
+}
+
+#water img{
+  float: left;
+  padding: 10px;
+}
+
+/* -------- ACTIVITY CONTAINER -------- */
+div#activity.item {
+  padding: 5px;
+}
+#activity-label {
+  padding-left: 10px;
+  position: relative;
+  top: 10px
+  /*display: inline-block;*/
+}
+
+div#activity-num {
+  width: 100px;
+  display: inline-block;
+}
+/* NOTE: ^ divs auto create line break so use
+inline-block for placing items beside */
+
+#activity-num {
+  font-size:40px;
+  text-align: center;
+  line-height: 86px;
+}
+
+#activity img{
+  float: left;
+  padding: 10px;
+}
+
+/* -------- GREETING CONTAINER -------- */
+#greeting #date {
+  color: #f48fb1; /* pink */
+  padding: 10px;
+}
+
+#date-container {
+  display: inline-block;
+}
+
+/* -------- FOOD LOG CONTAINER -------- */
+#foodlog {
+  overflow-y: auto;
+}
+
+#fooditem {
+  color: #E8E6E1;
+  border-bottom: 1px solid #b2b2ae;
+  padding: 10px 5px;
+}
+
+/* -------- SLEEP CONTAINER --------*/
+
+#sleep-label {
+  color: #03d9c4;
+}
+
+#sleep-num {
+  font-size: 30px;
+}
+
+#sleep img {
+  float: right;
+  padding: 10px;
+}
+
+/* -------- MACRO CONTAINER --------*/
+
+#macro-label {
+  color: #03d9c4;
+}

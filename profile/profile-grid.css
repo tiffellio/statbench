@@ -1,0 +1,23 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 100vh
+}
+
+/* each grid item or 'square' on dashboard */
+.item {
+  background-color: #413e39;
+  box-shadow: 10px 10px 10px #13120E;
+  border-radius: 5px;
+  margin: 15px;
+  padding: 5%;
+}
+
+.sub-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#sub-item-1{
+    border-right: 0.5px solid grey;
+}
