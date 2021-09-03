@@ -1,3 +1,5 @@
+// Calculates daily calorie goals based on BMR and adjusts according to fitness goals
+
 //Men: BMR = 88.362 + (13.397 x weight in kg) + (4.799 x height in cm) - (5.677 x age in years)
 //Women: BMR = 447.593 + (9.247 x weight in kg) + (3.098 x height in cm) - (4.330 x age in years)
 
@@ -28,13 +30,14 @@ window.onload = function calcBMR(){
 
   }
 
-  var weightGoal = 0;
   // ************* WEIGHT GAIN OR WEIGHT LOSS ADJUSTMENT
   // 0: lose 1 pound per week - 500 Cals
   // 1: lose half pound per week - 250 Cals
   // 2: mantain weight (don't change)
   // 3: gain half pound per week + 250 Cals
   // 4: gain 1 pound per week + 500 Cals
+
+  var weightGoal = 2;
 
   if (weightGoal == 0){
 
@@ -62,18 +65,16 @@ window.onload = function calcBMR(){
 
   }
 
-  
   // do not go below base calorie minimum
   if(bmr < 1200){
     bmr = 1200;
   }
 
+  // trim
   const bmrTrimmed = Math.trunc(bmr);
-  alert(bmrTrimmed);
+
+  // output to dashboard
   document.getElementById("calories-num").innerHTML = bmrTrimmed;
 
 
-
-  // function to calculate calories based on weight loss goals?
-  // you can display calories consumed & calorie goals in Profile
 }
