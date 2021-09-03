@@ -1,3 +1,19 @@
+<?php
+  require_once("./private/dbinfo.inc.php");
+
+  $link = mysqli_connect($host, $username, $password, $db_name);
+
+  // check if connection is successfull
+
+
+  if (mysqli_connect_error()){
+
+    die("There was a problem connecting to the MySQL database: ".mysqli_connect_error());
+
+  } else {
+    echo 'sucessfull\n';
+  }
+?>
 <!DOCTYPE html>
 <!--  Project: STATBENCH
       File: Homepage
