@@ -56,7 +56,7 @@ div#selected.sidebar-item {
 
 }
 
-input {
+input, select {
   background-color: #413e39;
   color: #E8E6E1;
   font-family: 'Pontano Sans', 'Open Sans', sans-serif;

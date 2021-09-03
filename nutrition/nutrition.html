@@ -46,8 +46,8 @@
                     <!-- display results -->
 
                     <!-- select how many -->
-                    <input type="number" id="food-quantity-srch"> <br>
-                    <label> Quantity </label> <br>
+                    <input type="number" id="food-quantity-srch">
+                    
                     <select name="unit-srch">
                         <option value="cups"> cups </option>
                         <option value="mls"> mls </option>
@@ -56,7 +56,9 @@
                         <option value="grams"> gram(s) </option>
                         <option value="oz"> ounce(s) </option>
                         <option value="serving"> serving </option>
-                    </select>
+                    </select> <br>
+
+                    <label> Quantity </label> <br>
 
                     <!-- display nutrition stats -->
 
@@ -71,17 +73,20 @@
                     <input type="text" id="food-type-add" placeholder="Ex: Peach, Steamed Rice, Chicken Thigh" /><br>
                     <label> Type </label> <br>
 
-                    <input type="number" id="food-quantity-add"/> <br> 
-                    <label> Quantity </label> <br>
+                    <input type="number" id="food-quantity-add" min="0" max="5000"/>
+
                     <select name="unit-add">
-                        <option value="cups">  </option>
-                        <option value="mls">  </option>
-                        <option value="tablespoons">  </option>
-                        <option value="teaspoons">  </option>
-                        <option value="grams">  </option>
-                        <option value="oz">  </option>
-                        <option value="item">  </option>
-                    </select>
+                      <option value="none"> Select a unit </option>
+                        <option value="cups"> cups </option>
+                        <option value="mls"> mls </option>
+                        <option value="tablespoons"> tablespoon(s) </option>
+                        <option value="teaspoons"> teaspoon(s) </option>
+                        <option value="grams"> gram(s) </option>
+                        <option value="oz"> ounce(s) </option>
+                        <option value="serving"> serving </option>
+                    </select> <br>
+
+                    <label> Quantity </label> <br>
 
                     <input type="text" id="cals-add" placeholder="kcal" /> <br>
                     <label> Calories </label> <br>
