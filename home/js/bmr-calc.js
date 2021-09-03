@@ -14,13 +14,64 @@ window.onload = function calcBMR(){
   // function to calculate BMR
   var bmr = 0;
 
-    //if female
-  bmr = (447.593 + (9.247 x kg) + (3.098 x cm) - (4.330 x age));
-  alert(bmr);
-    //else if male
-      // bmr = 88.362 + (13.397 x kg) + (4.799 x cm) - (5.677 x age)
+  //if female
+  gender = 1; // 0 male, 1 female
 
-    //return bmr
+
+  if (gender == 1){
+
+    bmr = 447.593 + (9.247 * kg) + (3.098 * cm) - (4.330 * age);
+
+  } else {
+
+    bmr = 88.362 + (13.397 * kg) + (4.799 * cm) - (5.677 * age);
+
+  }
+
+  var weightGoal = 0;
+  // ************* WEIGHT GAIN OR WEIGHT LOSS ADJUSTMENT
+  // 0: lose 1 pound per week - 500 Cals
+  // 1: lose half pound per week - 250 Cals
+  // 2: mantain weight (don't change)
+  // 3: gain half pound per week + 250 Cals
+  // 4: gain 1 pound per week + 500 Cals
+
+  if (weightGoal == 0){
+
+    bmr -= 500;
+
+  }
+
+  else if (weightGoal == 1) {
+
+    bmr -= 250;
+
+  }
+
+  // if 2, it stays the same
+
+  else if (weightGoal == 3) {
+
+    bmr += 250;
+
+  }
+
+  else if (weightGoal == 4) {
+
+    bmr += 500;
+
+  }
+
+  
+  // do not go below base calorie minimum
+  if(bmr < 1200){
+    bmr = 1200;
+  }
+
+  const bmrTrimmed = Math.trunc(bmr);
+  alert(bmrTrimmed);
+  document.getElementById("calories-num").innerHTML = bmrTrimmed;
+
 
 
   // function to calculate calories based on weight loss goals?
