@@ -31,9 +31,11 @@
 
         $row = mysqli_fetch_array($result);
 
-        echo "Your result is ".$row[1];
+        echo "Your result is ".$row;
 
     }
+
+
 ?>
 <!DOCTYPE html>
 <!--  Project: STATBENCH
