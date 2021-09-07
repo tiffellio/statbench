@@ -10,7 +10,7 @@ var date = d.getDate();
 var week = ["Monday", "Tuesday", "Wednesday", "Thurday", "Friday", "Saturday", "Sunday"];
 
 
-var weekday = week[d.getDay()];
+var weekday = week[d.getDay()]; //-1
 
 var displayDate = weekday+'<br/> '+monthName+', '+date;
 

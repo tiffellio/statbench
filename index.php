@@ -13,6 +13,27 @@
   } else {
     echo 'sucessfull\n';
   }
+
+/*
+  $date = "SELECT `dateID` FROM `dateLog` WHERE date(`date`) = CURDATE()";
+
+    if ($result = mysqli_query($link, $date)) {
+
+        $row = mysqli_fetch_array($result);
+
+        echo $row;
+
+    } */
+
+    $query = "SELECT * FROM dateLog";
+
+    if ($result = mysqli_query($link, $query)) {
+
+        $row = mysqli_fetch_array($result);
+
+        echo "Your result is ".$row[1];
+
+    }
 ?>
 <!DOCTYPE html>
 <!--  Project: STATBENCH
